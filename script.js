@@ -18,7 +18,7 @@ function deleteLast() {
   display.innerText = text.length > 1 ? text.slice(0, -1) : "0";
 }
 
-// 🔥 Safe calculation (basic sanitization)
+//  Safe calculation (basic sanitization)
 function calculate() {
   try {
     let expression = display.innerText
@@ -39,14 +39,14 @@ function calculate() {
   }
 }
 
-// 📜 History
+// History
 function addToHistory(item) {
   let p = document.createElement("p");
   p.innerText = item;
   historyList.prepend(p);
 }
 
-// ⌨️ Keyboard support
+// Keyboard support
 document.addEventListener("keydown", (e) => {
   if (!isNaN(e.key) || "+-*/.%".includes(e.key)) {
     append(e.key);
