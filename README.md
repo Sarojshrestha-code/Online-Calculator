@@ -50,7 +50,7 @@ Modern-Calculator/
 Go to the project folder:
 
 ```bash
-cd YOUR-REPOSITORY
+cd  Online-Calculator
 ```
 
 ### 3. Run the calculator
