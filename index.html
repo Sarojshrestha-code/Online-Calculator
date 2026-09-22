@@ -2,50 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title></title>Online Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Modern Calculator</title>
+
   <link rel="stylesheet" href="stylesheet.css">
 </head>
+
 <body>
 
-<div class="app">
+  <main class="app">
 
-  <div class="calculator">
-    <div id="display">0</div>
+    <!-- Calculator -->
+    <section class="calculator">
 
-    <div class="buttons">
-      <button onclick="clearDisplay()" class="gray">AC</button>
-      <button onclick="deleteLast()" class="gray">⌫</button>
-      <button onclick="append('%')" class="orange">%</button>
-      <button onclick="append('/')" class="orange">÷</button>
+      <div class="display">
+        <div id="expression"></div>
+        <div id="display">0</div>
+      </div>
 
-      <button onclick="append('7')">7</button>
-      <button onclick="append('8')">8</button>
-      <button onclick="append('9')">9</button>
-      <button onclick="append('*')" class="orange">×</button>
+      <div class="buttons">
 
-      <button onclick="append('4')">4</button>
-      <button onclick="append('5')">5</button>
-      <button onclick="append('6')">6</button>
-      <button onclick="append('-')" class="orange">−</button>
+        <button onclick="clearDisplay()" class="function">AC</button>
+        <button onclick="deleteLast()" class="function">⌫</button>
+        <button onclick="append('%')" class="function">%</button>
+        <button onclick="append('/')" class="operator">÷</button>
 
-      <button onclick="append('1')">1</button>
-      <button onclick="append('2')">2</button>
-      <button onclick="append('3')">3</button>
-      <button onclick="append('+')" class="orange">+</button>
+        <button onclick="append('7')">7</button>
+        <button onclick="append('8')">8</button>
+        <button onclick="append('9')">9</button>
+        <button onclick="append('*')" class="operator">×</button>
 
-      <button onclick="append('0')" class="zero">0</button>
-      <button onclick="append('.')">.</button>
-      <button onclick="calculate()" class="fullorange">=</button>
-    </div>
-  </div>
+        <button onclick="append('4')">4</button>
+        <button onclick="append('5')">5</button>
+        <button onclick="append('6')">6</button>
+        <button onclick="append('-')" class="operator">−</button>
 
-  <div class="history">
-    <h3>History</h3>
-    <div id="historyList"></div>
-  </div>
+        <button onclick="append('1')">1</button>
+        <button onclick="append('2')">2</button>
+        <button onclick="append('3')">3</button>
+        <button onclick="append('+')" class="operator">+</button>
 
-</div>
+        <button onclick="append('0')" class="zero">0</button>
+        <button onclick="append('.')">.</button>
+        <button onclick="calculate()" class="equals">=</button>
 
-<script src="script.js"></script>
+      </div>
+
+    </section>
+
+
+    <!-- History -->
+    <aside class="history">
+
+      <div class="history-header">
+        <h2>History</h2>
+        <button onclick="clearHistory()" class="clear-history">
+          Clear
+        </button>
+      </div>
+
+      <div id="historyList">
+        <p class="empty-history">No calculations yet</p>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
