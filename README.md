@@ -65,7 +65,7 @@ in your web browser.
 
 No installation or additional dependencies are required.
 
-## ⌨️ Keyboard Shortcuts
+##  Keyboard Shortcuts
 
 | Key         | Action         |
 | ----------- | -------------- |
@@ -91,19 +91,6 @@ The calculator uses a modern dark interface with:
 * Interactive button animations
 * Separate calculation history panel
 
-##  Preview
-
-Add a screenshot of your calculator here:
-
-```markdown
-![Calculator Preview](screenshot.png)
-```
-
-You can place your screenshot in the repository and name it:
-
-```text
-screenshot.png
-```
 
 ##  Future Improvements
 
